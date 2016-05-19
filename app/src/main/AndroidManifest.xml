@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.motr.mysonim" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.sonimtech.sdk" android:required="false" />
+        <meta-data
+            android:name="com.sonim.sentrify.ACL_TOKEN"
+            android:value="7b566d9ffb7e7adf4cf14c0aaf8aea1157b47a5f574babf7867afb7ed0341247806a66ff6c4e437373b3ecec40f64e309d765f84b5aa2aa1b5d69c4bf20162ee" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
